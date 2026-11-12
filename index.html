@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; font-src &#39;self&#39; https://fonts.gstatic.com; img-src &#39;self&#39; data: blob: https://i.ytimg.com; media-src &#39;self&#39;; connect-src &#39;self&#39; data: blob: https://gateway.umami.is; worker-src &#39;self&#39; blob:; frame-src https://www.youtube-nocookie.com https://www.youtube.com https://itch.io https://*.itch.io https://*.itch.zone; object-src &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;none&#39;; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050505">
+  <meta name="color-scheme" content="dark">
+  <title>JUIT — Mobu & oyun laboratuvarı</title>
+  <meta name="description" content="Oyunların arkasındaki mekanikler, Mobu ile anlatılan videolar ve oynanabilir deneyler.">
+  <link rel="canonical" href="https://juitexe.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="JUIT">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:url" content="https://juitexe.com/">
+  <meta property="og:title" content="JUIT — Mobu &amp; oyun laboratuvarı">
+  <meta property="og:description" content="Oyunların arkasındaki mekanikler, Mobu ile anlatılan videolar ve oynanabilir deneyler.">
+  <meta property="og:image" content="https://juitexe.com/logo/jt_logo.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/InterDisplay-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+  <script type="module" crossorigin src="/assets/main-C-RH_0KK.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/stats-BoxFg-GB.js">
+  <link rel="stylesheet" crossorigin href="/assets/main-DXqSDaae.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">İçeriğe atla</a>
+
+  <!-- Açılış: siyah perde + logo. JS başarısız olursa CSS fallback ile 2.5 sn sonra kaybolur. -->
+  <div id="intro" class="intro">
+    <canvas id="intro-canvas" class="intro__canvas" aria-hidden="true"></canvas>
+    <button id="intro-skip" class="intro__skip" type="button">Atla <kbd>Esc</kbd></button>
+  </div>
+
+  <!-- Kalıcı üst çubuk -->
+  <header id="topbar" class="topbar" hidden>
+    <a class="topbar__brand" href="#/" aria-label="JUIT ana sayfa"><img src="/logo/jt_logo.png" alt="" width="34" height="34"><span>JUIT</span></a>
+    <nav id="topbar-nav" class="topbar__nav" aria-label="Site gezinmesi">
+      <a href="#/mobu" data-route="mobu">Mobu & Videolar</a>
+      <a href="#/arcade" data-route="arcade">Oyun Salonu</a>
+      <a href="#/lab" data-route="lab">Deneyler</a>
+      <a href="#/about" data-route="about">Hakkımda</a>
+    </nav>
+    <div class="topbar__tools">
+      <button id="sfx-toggle" class="icon-btn" type="button" aria-pressed="false" title="Ses efektleri"><span class="icon-btn__ico" aria-hidden="true">🔇</span><span class="sr-only">Ses efektleri</span></button>
+      <button id="menu-toggle" class="icon-btn icon-btn--menu" type="button" aria-expanded="false" aria-controls="topbar-nav" title="Menü"><span aria-hidden="true">☰</span><span class="sr-only">Menü</span></button>
+    </div>
+  </header>
+
+  <main id="main" class="main" tabindex="-1">
+    <section class="view seo-static">
+      <h1>JUIT: oyunların arkasındaki mekanikler, Mobu ile</h1>
+      <p>Oyunların arkasını kurcalıyor, öğrendiklerimi mor maymun Mobu ile kısa videolarda anlatıyor ve her mekaniği tarayıcıda oynanabilir bir deneye çeviriyorum.</p>
+      <h2>Videolar ve deneyler</h2><ol><li><strong>#01 Düşmanlar neden sırayla saldırıyor?</strong> — Düşmanlardan 20 saniye kaç. <a href="https://www.youtube.com/shorts/JP8GdNk129I">Videoyu izle</a> · <a href="/lab.html#/deney/sirayla">Deneyi oyna</a></li><li><strong>#02 Düşmanlar seni nasıl görüyor?</strong> — Görülmeden çıkışa ulaş. <a href="https://www.youtube.com/shorts/lFPYpOPnbuU">Videoyu izle</a> · <a href="/lab.html#/deney/gorus">Deneyi oyna</a></li><li><strong>#03 Oyunlar neden hatalı zıplamalarını affediyor?</strong> — Boşluklardan atla, bayrağa ulaş. <a href="https://www.youtube.com/shorts/Io_tup3kwgQ">Videoyu izle</a> · <a href="/lab.html#/deney/coyote">Deneyi oyna</a></li><li><strong>#04 Oyunlar seni fark ettirmeden nasıl yönlendiriyor?</strong> — Çıkışı bul. <a href="https://www.youtube.com/shorts/Z_8KyhrweN0">Videoyu izle</a> · <a href="/lab.html#/deney/yonlendirme">Deneyi oyna</a></li><li><strong>#05 Sonsuz oyun dünyaları bilgisayarını neden patlatmıyor?</strong> — Dünyada dolaş, yüklenen parçaları izle. <a href="https://www.youtube.com/shorts/ziPOciIKHck">Videoyu izle</a> · <a href="/lab.html#/deney/chunk">Deneyi oyna</a></li><li><strong>#06 Küçücük bir ödülü toplamak neden bu kadar tatmin edici?</strong> — Aynı altını iki farklı hisle topla. <a href="https://www.youtube.com/shorts/RhnBtZKoLLI">Videoyu izle</a> · <a href="/lab.html#/deney/odul">Deneyi oyna</a></li><li><strong>#07 Bosslar neden saldırmadan önce haber veriyor?</strong> — Boss saldırılarından 8 kez kaç. <a href="https://www.youtube.com/shorts/iBi8zSmxhUc">Videoyu izle</a> · <a href="/lab.html#/deney/boss">Deneyi oyna</a></li><li><strong>#08 Oyunlarda zamanı nasıl yavaşlatıyorlar?</strong> — Mermilerin arasından karşıya geç. <a href="https://www.youtube.com/shorts/xJ9mcfhXjNk">Videoyu izle</a> · <a href="/lab.html#/deney/zaman">Deneyi oyna</a></li><li><strong>#09 Oyunlarda ıskaladığın hâlde nasıl vuruyorsun?</strong> — Hedefleri vur, görünmeyen kutuyu keşfet. <a href="https://www.youtube.com/shorts/zFeikOStBBY">Videoyu izle</a> · <a href="/lab.html#/deney/hitbox">Deneyi oyna</a></li><li><strong>#10 Oyunlarda vurulunca neden ölümsüz oluyorsun?</strong> — Tuzaklı koridoru geç. <a href="https://www.youtube.com/shorts/fCLPYu6DHhs">Videoyu izle</a> · <a href="/lab.html#/deney/iframes">Deneyi oyna</a></li><li><strong>#11 Oyunlarda uzaktaki nesneler neden daha kötü görünüyor?</strong> — Yaklaş, uzaklaş; detay seviyelerini izle. <a href="https://www.youtube.com/shorts/Y_-jcvNt3Xs">Videoyu izle</a> · <a href="/lab.html#/deney/lod">Deneyi oyna</a></li><li><strong>#12 Oyunlarda aynalarda neden kendini göremiyorsun?</strong> — Üç yansıma yöntemini kıyasla. <a href="https://www.youtube.com/shorts/LfwRGc50Fh4">Videoyu izle</a> · <a href="/lab.html#/deney/ayna">Deneyi oyna</a></li><li><strong>#13 Oyunlarda görünmez duvarlar neden var?</strong> — Haritanın görünmez sınırlarını keşfet. <a href="https://www.youtube.com/shorts/DA2mNoOmNvM">Videoyu izle</a> · <a href="/lab.html#/deney/duvar">Deneyi oyna</a></li><li><strong>#14 Oyunlar yükleme ekranlarını nasıl gizliyor?</strong> — Üç kapıdan geç, yükleme ekranı görmeden ilerle. <a href="https://www.youtube.com/shorts/FdkdoHB89j8">Videoyu izle</a> · <a href="/lab.html#/deney/yukleme">Deneyi oyna</a></li><li><strong>#15 Oyunlarda kameranın görmediği şeyler neden kayboluyor?</strong> — Ekran kartını yormadan ormanı geç. <a href="https://www.youtube.com/shorts/fk5OAq6NLwI">Videoyu izle</a> · <a href="/lab.html#/deney/culling">Deneyi oyna</a></li><li><strong>#16 Oyunlarda wallhack ve aimbot nasıl çalışıyor?</strong> — Hileleri dene, sonra oyunu hileye karşı koru. <a href="https://www.youtube.com/shorts/wTXIvBz18qk">Videoyu izle</a> · <a href="/lab.html#/deney/hile">Deneyi oyna</a></li><li><strong>#17 Düşmanlar nereye kaçacağını nasıl biliyor?</strong> — Tahminli atışlardan 20 saniye kurtul. <a href="https://www.youtube.com/shorts/Ba43AZWsvjk">Videoyu izle</a> · <a href="/lab.html#/deney/kestirim">Deneyi oyna</a></li><li><strong>#18 Yüzlerce karakter aynı anda nasıl çalışıyor?</strong> — Sahneyi 300 Mobu ile doldur, bütçeyi aşma. <a href="https://www.youtube.com/shorts/BFh3EQPyhpI">Videoyu izle</a> · <a href="/lab.html#/deney/kalabalik">Deneyi oyna</a></li><li><strong>#19 Düşmanlar seni neden bir anda unutuyor?</strong> — Düşmanı atlat, çıkışa ulaş. <a href="https://www.youtube.com/shorts/yh4LkvxU4NY">Videoyu izle</a> · <a href="/lab.html#/deney/unutma">Deneyi oyna</a></li><li><strong>#20 Canın azken neden daha zor ölüyorsun?</strong> — Canın azken 20 saniye hayatta kal. <a href="https://www.youtube.com/shorts/fXmJMTMmGIw">Videoyu izle</a> · <a href="/lab.html#/deney/soncan">Deneyi oyna</a></li><li><strong>#21 Mermiler neden nişan aldığın yere gitmiyor?</strong> — Beş hedefi vur. <a href="https://www.youtube.com/shorts/dVPbcPEprpA">Videoyu izle</a> · <a href="/lab.html#/deney/sapma">Deneyi oyna</a></li><li><strong>#22 Karakterler nasıl duvarların içinden geçebiliyor?</strong> — Mobu duvardan geçsin, sonra sistemi düzelt. <a href="https://www.youtube.com/shorts/ifPGNv7Cx0E">Videoyu izle</a> · <a href="/lab.html#/deney/tunel">Deneyi oyna</a></li><li><strong>#23 Düşmanlar neden bazen bilerek ıskalıyor?</strong> — Ateş altındaki alanı geç. <a href="https://www.youtube.com/shorts/ZoS99ordEls">Videoyu izle</a> · <a href="/lab.html#/deney/iskalama">Deneyi oyna</a></li><li><strong>#24 Birine vurduğunda zaman neden bazen donuyor?</strong> — Aynı yumruğu iki hisle dene, düşmanı devir. <a href="https://www.youtube.com/shorts/rOAQQpTY_Tg">Videoyu izle</a> · <a href="/lab.html#/deney/hitstop">Deneyi oyna</a></li><li><strong>#25 Düşmanlar seni nasıl takip ediyor?</strong> — Duvar örerek düşmanı oyala, çıkışa ulaş. <a href="https://www.youtube.com/shorts/_QfTH_aX0Eg">Videoyu izle</a> · <a href="/lab.html#/deney/yolbulma">Deneyi oyna</a></li><li><strong>#26 Dev patlamalar bilgisayarı neden patlatmıyor?</strong> — Dev bir patlama yap, bütçeyi aşma. <a href="https://www.youtube.com/shorts/1JhdiiNs8cY">Videoyu izle</a> · <a href="/lab.html#/deney/parcacik">Deneyi oyna</a></li><li><strong>#27 Gölgeler neden bazen kare kare görünüyor?</strong> — Gölgeyi düzelt, kare bütçesini aşma. <a href="https://www.youtube.com/shorts/cT7ALt_GXa0">Videoyu izle</a> · <a href="/lab.html#/deney/golge">Deneyi oyna</a></li><li><strong>#28 Silah sesleri neden bu kadar güçlü hissettiriyor?</strong> — Katmanları birleştirip &quot;pıt&quot; sesini güçlendir. <a href="https://www.youtube.com/shorts/300_b7xqsU8">Videoyu izle</a> · <a href="/lab.html#/deney/silahsesi">Deneyi oyna</a></li><li><strong>#29 Yarışta rakip neden hep hemen arkanda?</strong> — Lastiğin ayarıyla oynayıp yarışı kazan. <a href="https://www.youtube.com/shorts/SicieklBiJ0">Videoyu izle</a> · <a href="/lab.html#/deney/lastik">Deneyi oyna</a></li><li><strong>#30 Bir oyunun en zor düşmanı kim?</strong> — Şu tavuğu yakala. <a href="https://www.youtube.com/shorts/jSeMqQwHElY">Videoyu izle</a> · <a href="/lab.html#/deney/tavuk">Deneyi oyna</a></li><li><strong>#31 Oyun zorlandığını fark edince ne yapıyor?</strong> — Bölümü geç. Oyun seni izliyor. <a href="https://www.youtube.com/shorts/QxqbmUmX3d8">Videoyu izle</a> · <a href="/lab.html#/deney/dinamik">Deneyi oyna</a></li><li><strong>#32 Efsanevi eşya neden hep vazgeçmek üzereyken düşüyor?</strong> — Sandıkları aç, efsanevi eşyayı bul. <a href="https://www.youtube.com/shorts/5bxqzi3Njfw">Videoyu izle</a> · <a href="/lab.html#/deney/pity">Deneyi oyna</a></li><li><strong>#33 Boss odasının önünde neden hep kayıt noktası var?</strong> — Boss odasına hazır gir, bossu devir. <a href="https://www.youtube.com/shorts/95wuXnpMSyY">Videoyu izle</a> · <a href="/lab.html#/deney/kayit">Deneyi oyna</a></li><li><strong>#35 Oyun tehlikeyi sana sesle nasıl söylüyor?</strong> — Karanlık koridoru sesi dinleyerek geç. <a href="https://www.youtube.com/shorts/hebbmm9Gooo">Videoyu izle</a> · <a href="/lab.html#/deney/sesipucu">Deneyi oyna</a></li><li><strong>#37 Bu bölümü gözü kapalı geçebilir misin?</strong> — Bölümü ezberle, karanlıkta geç. <a href="https://www.youtube.com/shorts/39Pf9ZEoJHw">Videoyu izle</a> · <a href="/lab.html#/deney/gozukapali">Deneyi oyna</a></li></ol>
+      <p><a href="https://www.youtube.com/@Juitexe">YouTube kanalı</a> · <a href="https://juit.itch.io/">itch.io oyunları</a> · <a href="/lab.html">Mobu'nun Oyun Laboratuvarı</a></p>
+      <h2>İletişim</h2><p><a href="mailto:juitexe@gmail.com">juitexe@gmail.com</a></p>
+    </section>
+  </main>
+
+  <!-- Mobu canvas katmanı: tıklama geçirgen; sadece Mobu'nun kendisi için küçük bir hedef var -->
+  <canvas id="mobu-layer" class="mobu-layer" aria-hidden="true"></canvas>
+  <button id="mobu-hit" class="mobu-hit" type="button" aria-label="Mobu" hidden></button>
+
+  <!-- Modal (video / oyun / gizli çekmece) -->
+  <div id="modal" class="modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__frame" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal__head">
+        <h2 id="modal-title" class="modal__title"></h2>
+        <div class="modal__actions"></div>
+        <button class="icon-btn modal__close" type="button" data-close aria-label="Kapat"><span aria-hidden="true">✕</span></button>
+      </div>
+      <div class="modal__body"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <noscript><style>.intro{display:none}#topbar{display:flex}</style><p class="noscript">Bu site JavaScript ile çalışır. Videolar: <a href="https://juit.itch.io/">itch.io</a></p></noscript>
+</body>
+</html>
